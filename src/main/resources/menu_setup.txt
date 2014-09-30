@@ -1,0 +1,21 @@
+chapter: string
+	categories: []
+category: string
+	healthcareRequests: []
+healthcareRequest:
+	name: string
+	code: string
+	disciplines: []
+	icpcCodes: []
+	status: string //draft, review, publication
+
+1. add chapter without catergory and healthcareRequest
+2. add category to chapter without healthcareRequest
+3. add healthcareRequest to chapter
+4. add healthcareRequest to category
+
+
+
+//add mongodb dependency
+step 1 put menu in mongodb
+step 2 get menu from mongodb

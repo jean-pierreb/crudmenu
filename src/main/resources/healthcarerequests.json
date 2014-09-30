@@ -1,0 +1,2106 @@
+{
+    "chapters": [
+
+        {
+            "chapter": "Beeldvormend",
+            "categories": [
+                {
+                    "category": "Echo",
+                    "healthcareRequests": [
+                        {
+                            "name": "Bloedvaten",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Bovenbuik / gehele buik",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Echo / doppler",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Gynaecologische echo",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Onderbuik",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Overige lichaamsdelen",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Skelet",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Urologische echo",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Verloskundige echo",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Röntgenonderzoek",
+                    "healthcareRequests": [
+                        {
+                            "name": "Colon",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "DEXA",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Kaakgewrichten / OPG",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Mammografie",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Oesophagus / maag",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Overig onderzoek",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Sinus",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Skelet",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Thorax",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                }
+            ],
+            "healthcareRequests": [
+                {
+                    "name": "CT",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "MRI",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Endoscopie",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "Coloscopie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Gastroscopie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Overig scopieonderzoek",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Sigmoïdoscopie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Functieonderzoek",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "24-uurs ECG meting (Holter)",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "24-uurs Tensiemeting",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Bloedvaten",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Cardiac Event Recorder",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Cardiale echo",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "ECG",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Fundusfoto",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Inspannings ECG",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Longfunctieonderzoek",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Overig functieonderzoek",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Laboratorium",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "Laboratorium",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Nucleaire geneeskunde",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "Nucleaire geneeskunde",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Pathologie",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "Pathologie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Algemeen en niet gespecificeerd",
+            "categories": [
+                {
+                    "category": "Allergie",
+                    "healthcareRequests": [
+                        {
+                            "name": "Allergologische aandoeningen",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Geneesmiddelenallergie",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Insectengifallergie",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Pijn",
+                    "healthcareRequests": [
+                        {
+                            "name": "Acute pijn",
+                            "code": "ALGACU",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": ["L15"]
+                        },
+                        {
+                            "name": "Chronische pijn",
+                            "code": "ALGCHR",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": ["L15"]
+                        },
+                        {
+                            "name": "Oncologische pijn",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Sport",
+                    "healthcareRequests": [
+                        {
+                            "name": "Preventief sportmedisch onderzoek",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Revalidatie sportblessures",
+                            "code": "ALGREV",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": ["L15"]
+                        },
+                        {
+                            "name": "Sportmedische begeleiding",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Verblijf en wonen",
+                    "healthcareRequests": [
+                        {
+                            "name": "Dagbehandeling",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Kortdurend verblijf",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Langdurend verblijf",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Verpleging en verzorging",
+                    "healthcareRequests": [
+                        {
+                            "name": "Complexe gezondheidsproblemen",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Palliatieve zorg",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Persoonlijke verzorging",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Specialistische verpleging",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Verpleging",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Welzijnsdiensten en cursussen",
+                    "healthcareRequests": [
+                        {
+                            "name": "Kanker",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Leefstijl algemeen",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                }
+            ],
+            "healthcareRequests": [
+                {
+                    "name": "Aangeboren afwijkingen en / of verstandelijke handicap",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Chronische vermoeidheid eci",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": ["A04"]
+                },
+                {
+                    "name": "Functionele achteruitgang",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Hulpmiddelenzorg",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Infectieziekten",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Multiple orgaanstoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Trauma",
+                    "code": "ALGTRA",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": ["L15"]
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Bewegingsapparaat",
+            "categories": [
+                {
+                    "category": "Bekken en onderste extremiteiten",
+                    "healthcareRequests": [
+                        {
+                            "name": "Bekken / heup / bovenbeen",
+                            "code": "UROKOL",
+                            "disciplines": ["general practitioner", "fysiotherapist"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Enkel / voet",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Knie",
+                            "code": "BEWKNI",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": ["L15"]
+                        },
+                        {
+                            "name": "Loopstoornissen, vallen",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Mank lopend kind",
+                            "code": "BEWMLK",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": ["L15"]
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Hoofd, bovenste extremiteiten en wervelkolom",
+                    "healthcareRequests": [
+                        {
+                            "name": "Hoofd / aangezicht",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Elleboog",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Kaak",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Nek",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Pols / hand",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Rug / sacrum",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Schouder",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Scoliose",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Skelet en bindweefselaandoeningen",
+                    "healthcareRequests": [
+                        {
+                            "name": "Hypermobiliteit",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Osteoporose / botziekten",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Weke delen aandoeningen",
+                            "code": "BEWWEK",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": ["L15"]
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                }
+            ],
+            "healthcareRequests": [
+                {
+                    "name": "Aandoeningen houdings- en bewegingsapparaat",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Artritiden",
+                    "code": "BEWART",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": ["L15"]
+                },
+                {
+                    "name": "Degeneratieve aandoeningen",
+                    "code": "BEWDEG",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": ["L15"]
+                },
+                {
+                    "name": "Ergotherapie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Inflammatoire aandoeningen",
+                    "code": "BEWINF",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": ["L15"]
+                },
+                {
+                    "name": "Revalidatie",
+                    "code": "BEWREV",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": ["L15"]
+                },
+                {
+                    "name": "Systeem aandoeningen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Traumatologie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Bloed, bloedvormende organen en immuunstelsel",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "Anemie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Hematologische aandoeningen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Stollingsstoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Verhoogde bezinking",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Cardiovasculair stelsel",
+            "categories": [
+                {
+                    "category": "Hart",
+                    "healthcareRequests": [
+                        {
+                            "name": "Cardiomyopathie",
+                            "code": "PEDCHR",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Hartfalen",
+                            "code": "CARECG",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Hartritmestoornissen",
+                            "code": "CARRIT",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Ischaemische hartziekten",
+                            "code": "CARISC",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Souffle / klepgebreken",
+                            "code": "CARSOU",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Verminderde inspanningstolerantie",
+                            "code": "SPOCAR",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Vaten",
+                    "healthcareRequests": [
+                        {
+                            "name": "Arteriele aandoeningen",
+                            "code": "ORTKNI",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Trombose",
+                            "code": "CARTRO",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Varices",
+                            "code": "CARVAR",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Veneuze aandoeningen",
+                            "code": "CARVEN",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                }
+            ],
+            "healthcareRequests": [
+                {
+                    "name": "Cardio-vasculair risico",
+                    "code": "CARCVR",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": ["T90"]
+                },
+                {
+                    "name": "Cardiogenetica",
+                    "code": "NEULRS",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Hypertensie",
+                    "code": "CARHYP",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Endocriene klieren/stofwisseling/voeding",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "Anorexie / vermagering",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Diabetes mellitus",
+                    "code": "ENDODM",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": ["T90"]
+                },
+                {
+                    "name": "Gewichtsverlies / ondergewicht",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Groeistoornis",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Overgewicht / obesitas",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Puberteit",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Schildklieraandoening",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Vetstofwisselingsstoornis",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Huid",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "(Pre)maligne huidafwijkingen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Aangeboren naevus",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Acne",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Afwijkingen huid hoofdhals",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Allergische huidaandoeningen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Eczemateuze aandoeningen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Haar- en nagelafwijkingen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Huidtherapie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Psoriasis",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "SOA",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Ulcus cruris",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Wratten",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Luchtwegen",
+            "categories": [
+                {
+                    "category": "Bovenste luchtwegen",
+                    "healthcareRequests": [
+                        {
+                            "name": "Bovenste luchtwegproblematiek",
+                            "code": "LUCBOV",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": ["R05"]
+                        },
+                        {
+                            "name": "Neus",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Reuk- / smaakstoornissen",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Tonsillitis / adenoiditis",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Onderste luchtwegen",
+                    "healthcareRequests": [
+                        {
+                            "name": "Astma",
+                            "code": "LUCAST",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": ["R05"]
+                        },
+                        {
+                            "name": "COPD",
+                            "code": "LUCCOP",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": ["R05"]
+                        },
+                        {
+                            "name": "Onderste luchtweginfectie",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                }
+            ],
+            "healthcareRequests": [
+                {
+                    "name": "Dyspnoe eci",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Hoesten",
+                    "code": "LUCHOE",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": ["R05"]
+                },
+                {
+                    "name": "Recidiverende luchtweginfecties",
+                    "code": "LUCREC",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": ["R05"]
+                },
+                {
+                    "name": "Slik- / globusklachten",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Snurkklachten / slaapapneu",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Stemklachten",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Verdenking maligniteit / hemoptoë",
+                    "code": "LUCMAL",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": ["R05"]
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Mannelijke geslachtsorganen (incl. borsten)",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "Aandoeningen scrotum / testis / penis",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Gynaecomastie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Infertiliteit man",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Seksuele disfunctie man / impotentie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "SOA",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Sterilisatie man",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Verhoogd PSA",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag penis",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Oog",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "Cataract",
+                    "code": "NEULRS",
+                    "disciplines": ["general practitioner", "optometrist"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Contactlensproblemen",
+                    "code": "OOGCON",
+                    "disciplines": ["general practitioner", "optometrist"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Diabetesgerelateerd",
+                    "code": "OOGDIA",
+                    "disciplines": ["general practitioner", "optometrist"],
+                    "icpcCodes": ["T90"]
+                },
+                {
+                    "name": "Glaucoom",
+                    "code": "OOGGLA",
+                    "disciplines": ["general practitioner", "optometrist"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Kleine verrichting",
+                    "code": "OOGKVO",
+                    "disciplines": ["general practitioner", "optometrist"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Oogleden",
+                    "code": "PCHOOG",
+                    "disciplines": ["general practitioner", "optometrist"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Rood oog / rode ogen",
+                    "code": "OOGROO",
+                    "disciplines": ["general practitioner", "optometrist"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Strabismus en / of amblyopie",
+                    "code": "OOGSTR",
+                    "disciplines": ["general practitioner", "optometrist"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Trauma ogen / oogleden",
+                    "code": "PEDCHR",
+                    "disciplines": ["general practitioner", "optometrist"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Verminderde visus / refractieafwijkingen",
+                    "code": "OOGVER",
+                    "disciplines": ["general practitioner", "optometrist"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Vlekken / flitsen",
+                    "code": "OOGVLE",
+                    "disciplines": ["general practitioner", "optometrist"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Oor",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "Anatomische afwijkingen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Duizeligheid",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Gehoorklachten",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Infecties / ontstekingen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Oorsuizen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Psychische problemen",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "Aanpassingsstoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Angststoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Cognitieve stoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Eetstoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Gedragsstoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Ontwikkelingsstoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Persoonlijkheidsstoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Psychische stoornissen door een somatische aandoening",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Psychosociale en omgevingsproblemen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Psychotische stoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Seksuele stoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Slaapstoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Somatoforme stoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Stemmingsstoornissen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Verslavingsstoornissen",
+                    "code": "PSYVER",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": ["R05"]
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Sociale problemen",
+            "categories": [
+                {
+                    "category": "Gezin en opvoeding",
+                    "healthcareRequests": [
+                        {
+                            "name": "Instabiele opvoedingssituatie",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Problemen in de ouder-kind relatie",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Problemen in omstandigheden gezin",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Problemen in sociaal netwerk van het gezin",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Problemen met vaardigheden",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Problemen op cognitieve ontwikkeling",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Problemen van ander gezinslid",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Problemen van ouder",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Ontoereikende kwaliteiten opvoeding",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Overige problemen gezin en opvoeding",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Overige vaardigheden en cognitieve ontwikkeling",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Verwaarlozing, lichamelijke / psychische mishandeling, incest, seksueel misbruik in gezin",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                }
+            ],
+            "healthcareRequests": [
+                {
+                    "name": "Aan lichamelijke functies gerelateerde klachten",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Gebrekkige zelfverzorging, zelfhygiëne, ongezonde levenswijze",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Lichamelijke ziekte, aandoening of handicap",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Overige problemen lichamelijke gezondheid",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Spijsverteringsorganen",
+            "categories": [
+                {
+                    "category": "Darm",
+                    "healthcareRequests": [
+                        {
+                            "name": "(Verdenking) erfelijke darmziekten",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Aandoeningen buikwand / lieskanaal",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Darmkanker",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Diarree",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Incontinentie voor faeces",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Obstipatie",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Proctologische aandoeningen",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Rectaal bloedverlies",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Hoofd en hals",
+                    "healthcareRequests": [
+                        {
+                            "name": "Afwijkingen mondslijmvlies",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Gebits(prothese)problematiek",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Ontstekingen mond en hoofdhals",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zwellingen hoofd-hals",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Lever en gal",
+                    "healthcareRequests": [
+                        {
+                            "name": "Cholestase",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Focale leverafwijking op echo",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Galsteenlijden",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Leverfunctiestoornissen",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Slokdarm en maag",
+                    "healthcareRequests": [
+                        {
+                            "name": "Dysfagie",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Reflux, dyspepsie en bovenbuikspijn",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                }
+            ],
+            "healthcareRequests": [
+                {
+                    "name": "Buikklachten",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Voedingsproblemen / -allergie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Urinewegen",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "Hematurie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Incontinentie / prolaps",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Koliek(en) / urolithiasis",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Lower Urinary Tract Symptoms (LUTS)",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Nefrologische aandoeningen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Urineweginfectie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Vrouwel. Geslachtsorganen (incl. borsten)",
+            "categories": [
+                {
+                    "category": "Cyclusstoornissen / abnormaal  vaginaal bloedverlies",
+                    "healthcareRequests": [
+                        {
+                            "name": "(Post)menopauzaal",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Premenopauzaal",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Genitalia",
+                    "healthcareRequests": [
+                        {
+                            "name": "Ovariumcarcinoom",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Palpabele afwijking uterus / -adnexen",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Vulva-problematiek",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Mammae",
+                    "healthcareRequests": [
+                        {
+                            "name": "Mamma-augmentatie",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Mammacarcinoom",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Mammapathologie",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Mammareductie",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Reconstructie mammae",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                }
+            ],
+            "healthcareRequests": [
+                {
+                    "name": "Fluor vaginalis",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Incontinentie / prolaps",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Onderbuikpijn",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Overgangsklachten",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Pelvic Inflammatory Disease (PID)",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Premenstrueel syndroom (PMS)",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Seksuele disfunctie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "SOA",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Zenuwstelsel",
+            "categories": [
+                {
+                    "category": "Centraal",
+                    "healthcareRequests": [
+                        {
+                            "name": "Duizeligheid / syncope",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Recidiverende convulsies / epilepsie",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Hoofdpijn",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Parkinsonisme",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Spraak(ontwikkelings)stoornis",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Taal(ontwikkelings)stoornis",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Verdenking maligniteit",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                },
+                {
+                    "category": "Perifeer",
+                    "healthcareRequests": [
+                        {
+                            "name": "Carpaal tunnelsyndroom",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Lage rugklachten (excl LRS)",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Neuropathische / diabetische voetproblematiek",
+                            "code": "ZENDIA",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": ["T90"]
+                        },
+                        {
+                            "name": "Perifere pijnsyndromen excl. CTS",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Radiculair syndroom",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Sensibele stoornissen (polyneuropathie)",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        },
+                        {
+                            "name": "Zorgvraag niet gespecificeerd / overig",
+                            "code": "",
+                            "disciplines": ["general practitioner"],
+                            "icpcCodes": []
+                        }
+                    ]
+                }
+            ],
+            "healthcareRequests": [
+                {
+                    "name": "Cerebrovasculaire aandoeningen",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Motorische-/mentale retardatie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Neurogenetica",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Neurologische revalidatie",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        },
+
+        {
+            "chapter": "Zwangerschap, bevalling en geboorteregeling",
+            "categories": [],
+            "healthcareRequests": [
+                {
+                    "name": "Infertiliteit / subfertiliteit",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Plaatsen, verwijderen, lokaliseren IUD",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Preconceptionele consultatie / advies",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Prenatale diagnostiek",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Sterilisatie vrouw",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Verloskunde",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zwangerschap en partus",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                },
+                {
+                    "name": "Zorgvraag niet gespecificeerd / overig",
+                    "code": "",
+                    "disciplines": ["general practitioner"],
+                    "icpcCodes": []
+                }
+            ]
+        }
+
+    ]
+}
