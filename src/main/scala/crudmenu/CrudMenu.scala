@@ -38,6 +38,16 @@ with CreationSupport {
       formFields('chapter) { (chapter) =>
         complete(s"Do you want to add this chapter: $chapter to the databases")
       }
+    } ~
+    path("deleteChapter") {
+      formFields('chapterId) { (chapterId) =>
+        complete(s"Do you want to add this a chapter with ID: $chapterId from the database")
+      }
+    } ~
+    path("showChapters"){
+      get{
+        complete("show all chapters from the Database")
+      }
     }
 
   lazy val index = HttpResponse(
@@ -54,17 +64,26 @@ with CreationSupport {
             </li>
             <li><a href="/posting">/posting</a></li>
             <li><a href="/addChapter">add chapter without catergory and healthcareRequest</a></li>
+            <li><a href="/deleteChapter/{id}">remove chapter</a></li>
+            <li><a href="/showChapters">all chapters</a></li>
             <li><a href="/">add category to chapter without healthcareRequest</a></li>
             <li><a href="/">add healthcareRequest to chapter</a></li>
             <li><a href="/">add healthcareRequest to category</a></li>
-            <li><a href="/">remove chapter</a></li>
+
             <li><a href="/">remove category</a></li>
             <li><a href="/">remove healthcareRequest</a></li>
           </ul>
-          <p>Test post message</p>
-          <form action="/posting" enctype="multipart/form-data" method="post">
+          <p>Add Chapter</p>
+          <form action="/addChapter" enctype="multipart/form-data" method="post">
             Chapter:
             <input type="text" name="chapter"></input>
+            <br/>
+            <input type="submit">Submit</input>
+          </form>
+          <p>Remove Chapter with ID</p>
+          <form action="/deleteChapter" enctype="multipart/form-data" method="post">
+            Chapter ID:
+            <input type="text" name="chapterId"></input>
             <br/>
             <input type="submit">Submit</input>
           </form>
