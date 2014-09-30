@@ -2,7 +2,7 @@ name := "Experiment"
 
 version := "1.0"
 
-scalaVersion := "2.11.2"
+scalaVersion := "2.10.4"
 
 scalacOptions := Seq("-encoding", "utf8",
   "-target:jvm-1.7",
@@ -22,6 +22,8 @@ resolvers ++= Seq("Sonatype Releases"   at "http://oss.sonatype.org/content/repo
   "Spray Nightlies"     at "http://nightlies.spray.io/",
   "Base64 Repo"         at "http://dl.bintray.com/content/softprops/maven")
 
+resolvers += Resolver.url("ReactiveMongo Fixes", url("http://dl.bintray.com/rayroestenburg/reactivemongo-fixes-ssl"))(Resolver.ivyStylePatterns)
+
 libraryDependencies ++= {
   val akkaVersion  = "2.3.4"
   val sprayVersion = "1.3.1"
@@ -37,6 +39,8 @@ libraryDependencies ++= {
     "com.typesafe.akka"       %%  "akka-testkit"           % akkaVersion    % "test",
     "io.spray"                %%  "spray-testkit"          % sprayVersion   % "test",
     "org.specs2"              %%  "specs2"                 % "2.3.13"       % "test",
-    "org.reactivemongo" %% "reactivemongo" % "0.10.0"
+    "org.reactivemongo" %% "reactivemongo" % "0.10.0-fixes-ssl-2.3.0",
+    "org.reactivemongo" %% "reactivemongo-bson" % "0.10.0",
+    "net.fehmicansaglam" %% "reactivemongo-extensions-bson" % "0.10.0.3" excludeAll(ExclusionRule(organization = "org.reactivemongo"))
   )
 }
