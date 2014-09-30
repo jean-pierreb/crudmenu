@@ -60,18 +60,17 @@ with CreationSupport {
           <p>Defined resources:</p>
           <ul>
             <li>
-              <a href="/menu">Het hele menu</a>
+              <a href="/menu">Het hele menu json</a>
             </li>
             <li><a href="/posting">/posting</a></li>
             <li><a href="/addChapter">add chapter without catergory and healthcareRequest</a></li>
-            <li><a href="/deleteChapter/{id}">remove chapter</a></li>
+            <li><a href="/deleteChapter">remove chapter</a></li>
             <li><a href="/showChapters">all chapters</a></li>
-            <li><a href="/">add category to chapter without healthcareRequest</a></li>
+            <!-- <li><a href="/">add category to chapter without healthcareRequest</a></li>
             <li><a href="/">add healthcareRequest to chapter</a></li>
             <li><a href="/">add healthcareRequest to category</a></li>
-
             <li><a href="/">remove category</a></li>
-            <li><a href="/">remove healthcareRequest</a></li>
+            <li><a href="/">remove healthcareRequest</a></li> -->
           </ul>
           <p>Add Chapter</p>
           <form action="/addChapter" enctype="multipart/form-data" method="post">
