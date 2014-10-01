@@ -39,9 +39,9 @@ libraryDependencies ++= {
     "com.typesafe.akka"       %%  "akka-testkit"           % akkaVersion    % "test",
     "io.spray"                %%  "spray-testkit"          % sprayVersion   % "test",
     "org.specs2"              %%  "specs2"                 % "2.3.13"       % "test",
-    "org.scalatest" %% "scalatest" % "2.2.1" % "test,it",
+    "org.scalatest" %% "scalatest" % "2.2.1" % "test",
     "org.reactivemongo" %% "reactivemongo" % "0.10.0-fixes-ssl-2.3.0",
     "org.reactivemongo" %% "reactivemongo-bson" % "0.10.0",
-    "net.fehmicansaglam" %% "reactivemongo-extensions-bson" % "0.10.0.3" excludeAll(ExclusionRule(organization = "org.reactivemongo"))
+    "net.fehmicansaglam" %% "reactivemongo-extensions-bson" % "0.10.0.3" excludeAll ExclusionRule(organization = "org.reactivemongo")
   )
 }
