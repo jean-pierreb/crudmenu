@@ -25,11 +25,6 @@ with ExecutionContextSupport {
     path("menu") {
       getFromResource("oneline.json")
     } ~
-    path("posting") {
-      formFields('chapter) { (chapter) =>
-        complete(s"Do you want to add this chapter: $chapter")
-      }
-    } ~
     path("addChapter") {
       formFields('chapter) { (chapter) =>
         complete(s"Do you want to add this chapter: $chapter to the databases")
@@ -37,7 +32,7 @@ with ExecutionContextSupport {
     } ~
     path("deleteChapter") {
       formFields('chapterId) { (chapterId) =>
-        complete(s"Do you want to add this a chapter with ID: $chapterId from the database")
+        complete(s"Do you want to remove this a chapter with ID: $chapterId from the database")
       }
     } ~
     path("showChapters"){
