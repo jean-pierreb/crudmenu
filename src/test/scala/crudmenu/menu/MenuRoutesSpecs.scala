@@ -1,6 +1,7 @@
 package crudmenu.menu
 
-import crudmenu.{MenuRoutes, RouteBaseSpec}
+import crudmenu.adapters.menu.MenuRoutes
+import crudmenu.RouteBaseSpec
 import spray.http.FormData
 import spray.http.MediaTypes._
 import spray.http.StatusCodes._
