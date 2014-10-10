@@ -1,27 +1,23 @@
 package crudmenu
 
+import crudmenu.utils.ExecutionContextSupport
 import spray.http._
 import spray.routing.{HttpServiceActor, HttpService}
 import MediaTypes._
 
-import scala.concurrent.ExecutionContext
-
-class CrudMenu extends HttpServiceActor with ActorContextCreationSupport with MenuRoute {
+class CrudMenu extends HttpServiceActor with ActorContextCreationSupport with MenuRoutes {
 
   def receive = {
-    runRoute(menuRoute)
+    runRoute(menuRoutes)
   }
 
   implicit def executionContext = actorRefFactory.dispatcher
 }
 
+trait MenuRoutes extends HttpService
+with ExecutionContextSupport {
 
-trait MenuRoute extends HttpService
-with CreationSupport {
-
-  implicit def executionContext: ExecutionContext
-
-  def menuRoute = pathSingleSlash {
+  def menuRoutes = pathSingleSlash {
     get {
       complete(index)
     }
