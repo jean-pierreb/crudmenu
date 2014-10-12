@@ -14,7 +14,7 @@ trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJson
     }
   } ~
     path("menu") {
-      getFromResource("oneline.json")
+      getFromResource("menu.json")
     } ~
     path("addChapter") {
       formFields('chapter) { (chapter) =>
@@ -28,7 +28,7 @@ trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJson
     } ~
     path("showChapters"){
       get{
-        getFromResource("oneArray.json")
+        getFromResource("chapters.json")
       }
     }
 

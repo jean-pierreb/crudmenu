@@ -14,8 +14,20 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
       Get("/menu") ~> menuRoutes ~> check {
         status shouldEqual OK
         mediaType shouldEqual `application/json`
-        val menu = responseAs[String]
-        menu shouldEqual "{\"name\": \"Hoofdstuk\"}"
+        val menu = responseAs[ChapterTreeData]
+        menu.chapters.size shouldBe 1
+
+        val chapter1 = menu.chapters(0)
+        chapter1.name shouldEqual "Chapter 1"
+        chapter1.categories.size shouldEqual 1
+
+        val categories1 = chapter1.categories(0)
+        categories1.name shouldEqual "Cat 1"
+        categories1.items.size shouldEqual 1
+
+        val item1 = categories1.items(0)
+        item1.id shouldEqual "1"
+        item1.name shouldEqual "Item 1"
       }
     }
   }
@@ -45,20 +57,6 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
       Get("/showChapters") ~> menuRoutes ~> check {
         status shouldEqual OK
         mediaType shouldEqual `application/json`
-        val tree = responseAs[ChapterTreeData]
-        tree.chapters.size shouldEqual 1
-
-        val chapter1 = tree.chapters(0)
-        chapter1.name shouldEqual "Chapter 1"
-        chapter1.categories.size shouldEqual 1
-
-        val categories1 = chapter1.categories(0)
-        categories1.name shouldEqual "Cat 1"
-        categories1.items.size shouldEqual 1
-
-        val item1 = categories1.items(0)
-        item1.id shouldEqual "1"
-        item1.name shouldEqual "Item 1"
       }
     }
   }
