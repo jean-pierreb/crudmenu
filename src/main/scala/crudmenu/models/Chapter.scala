@@ -1,8 +1,9 @@
 package crudmenu.models
-import spray.json._
 
-case class Chapter(id: String, name: String, category: List[String] = List(), healthcareRequest: List[String] = List())
+import spray.json.DefaultJsonProtocol
 
-object Chapter extends DefaultJsonProtocol{
-  implicit val format = jsonFormat4(Chapter.apply)
+case class Chapter(name: String)
+
+trait ChapterMarshalling extends DefaultJsonProtocol{
+  implicit val chapterFormat = jsonFormat1(Chapter)
 }

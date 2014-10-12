@@ -1,12 +1,12 @@
 package crudmenu.menu
 
-import crudmenu.adapters.menu.MenuRoutes
+import crudmenu.adapters.menu.{ChapterDataMarshalling, MenuRoutes}
 import crudmenu.RouteBaseSpec
 import spray.http.FormData
 import spray.http.MediaTypes._
 import spray.http.StatusCodes._
 
-class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes{
+class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with ChapterDataMarshalling{
 
 "CrudMenu API" when {
   "looking up menu" should {
@@ -44,8 +44,9 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes{
     "return a tree of all chapters" in {
       Get("/showChapters") ~> menuRoutes ~> check {
         status shouldEqual OK
-        val chapter = responseAs[String]
-        chapter shouldEqual "show all chapters from the Database"
+        mediaType shouldEqual `application/json`
+        val chapter = responseAs[ChapterData]
+        chapter.name shouldEqual "Hoofdstuk"
       }
     }
   }

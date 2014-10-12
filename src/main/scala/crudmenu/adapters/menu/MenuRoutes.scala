@@ -3,9 +3,10 @@ package crudmenu.adapters.menu
 import crudmenu.utils.ExecutionContextSupport
 import spray.http.MediaTypes._
 import spray.http.{HttpEntity, HttpResponse}
+import spray.httpx.SprayJsonSupport
 import spray.routing.HttpService
 
-trait MenuRoutes extends HttpService with ExecutionContextSupport {
+trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJsonSupport {
 
   def menuRoutes = pathSingleSlash {
     get {
@@ -27,7 +28,7 @@ trait MenuRoutes extends HttpService with ExecutionContextSupport {
     } ~
     path("showChapters"){
       get{
-        complete("show all chapters from the Database")
+        getFromResource("oneline.json")
       }
     }
 
