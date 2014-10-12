@@ -1,8 +1,19 @@
 {
     "chapters": [
 
-    {
-        "name": "Hoofdstuk"
-    }
-]
+        {
+            "name": "Chapter 1",
+            "categories": [
+                {
+                    "name": "Cat 1",
+                    "items": [
+                        {
+                            "id": "1",
+                            "name": "Item 1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }

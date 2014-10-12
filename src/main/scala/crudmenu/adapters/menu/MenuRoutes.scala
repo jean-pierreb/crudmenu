@@ -28,7 +28,7 @@ trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJson
     } ~
     path("showChapters"){
       get{
-        getFromResource("oneline.json")
+        getFromResource("oneArray.json")
       }
     }
 
