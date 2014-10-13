@@ -6,7 +6,7 @@ import spray.http.{HttpEntity, HttpResponse}
 import spray.httpx.SprayJsonSupport
 import spray.routing.HttpService
 
-trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJsonSupport {
+trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJsonSupport with MenuQueries {
 
   def menuRoutes = pathSingleSlash {
     get {
@@ -14,7 +14,7 @@ trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJson
     }
   } ~
     path("menu") {
-      getFromResource("menu.json")
+      complete(getFullMenu())
     } ~
     path("addChapter") {
       formFields('chapter) { (chapter) =>
