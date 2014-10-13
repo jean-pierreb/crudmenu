@@ -16,11 +16,11 @@ scalacOptions := Seq("-encoding", "utf8",
 
 mainClass := Some("crudmenu.Main")
 
-resolvers ++= Seq("Sonatype Releases"   at "http://oss.sonatype.org/content/repositories/releases",
+resolvers ++= Seq("Sonatype Releases" at "http://oss.sonatype.org/content/repositories/releases",
   "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
-  "Spray Repository"    at "http://repo.spray.io/",
-  "Spray Nightlies"     at "http://nightlies.spray.io/",
-  "Base64 Repo"         at "http://dl.bintray.com/content/softprops/maven")
+  "Spray Repository" at "http://repo.spray.io/",
+  "Spray Nightlies" at "http://nightlies.spray.io/",
+  "Base64 Repo" at "http://dl.bintray.com/content/softprops/maven")
 
 resolvers += Resolver.url("ReactiveMongo Fixes", url("http://dl.bintray.com/rayroestenburg/reactivemongo-fixes-ssl"))(Resolver.ivyStylePatterns)
 
@@ -40,6 +40,8 @@ libraryDependencies ++= {
     "io.spray"                %%  "spray-testkit"          % sprayVersion   % "test",
     "org.specs2"              %%  "specs2"                 % "2.3.13"       % "test",
     "org.scalatest" %% "scalatest" % "2.2.1" % "test",
+      "com.github.simplyscala" %% "scalatest-embedmongo" % "0.2.1" % "test",
+      "org.slf4j" % "jul-to-slf4j" % "1.7.7" % "test",
     "org.reactivemongo" %% "reactivemongo" % "0.10.0-fixes-ssl-2.3.0",
     "org.reactivemongo" %% "reactivemongo-bson" % "0.10.0",
     "net.fehmicansaglam" %% "reactivemongo-extensions-bson" % "0.10.0.3" excludeAll ExclusionRule(organization = "org.reactivemongo")

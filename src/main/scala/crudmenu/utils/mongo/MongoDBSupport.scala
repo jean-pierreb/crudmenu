@@ -1,16 +1,16 @@
-package crudmenu
+package crudmenu.utils.mongo
 
-import reactivemongo.api.{MongoDriver, MongoConnection, DefaultDB}
+import crudmenu.ActorSystemSupport
+import crudmenu.utils.ExecutionContextSupport
+import reactivemongo.api.{ MongoDriver, MongoConnection, DefaultDB }
 import reactivemongo.api.MongoConnection.ParsedURI
-import scala.concurrent.ExecutionContext.Implicits.global
-import scala.util.{Failure, Success}
+import scala.util.{ Failure, Success }
 
 trait MongoDBSupport {
   def db: DefaultDB
 }
 
-trait MongoUrl extends  ActorSystemSupport {
-
+trait MongoUrl extends ActorSystemSupport {
   val serverUri = system.settings.config.getString("crudmenu.mongodb.server-uri")
   val parsedServerUriLocal: ParsedURI = MongoConnection.parseURI(serverUri) match {
     case Success(uri)   ⇒ uri
@@ -20,11 +20,11 @@ trait MongoUrl extends  ActorSystemSupport {
   def parsedServerUri = parsedServerUriLocal
 }
 
-trait DefaultMongoDBSupport extends MongoUrl with MongoDBSupport with ActorContextCreationSupport  {
+trait DefaultMongoDBSupport extends MongoUrl with MongoDBSupport with ActorSystemSupport with ExecutionContextSupport {
   def parsedServerUri: ParsedURI
 
   //Mongo initialization
   val driver = new MongoDriver(system)
   val connection: MongoConnection = driver.connection(parsedServerUri)
-  override def db: DefaultDB = connection("zorgdomein")
+  override def db: DefaultDB = connection("Experimental")
 }

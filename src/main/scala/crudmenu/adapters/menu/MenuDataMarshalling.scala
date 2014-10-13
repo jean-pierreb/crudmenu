@@ -1,6 +1,6 @@
 package crudmenu.adapters.menu
 
-import crudmenu.models.{Item, Chapter, Category, ChapterTree}
+import crudmenu.models.{ChapterTree, Category, Item, Chapter}
 import spray.json.{ DefaultJsonProtocol, RootJsonWriter }
 
 trait MenuDataMarshalling extends DefaultJsonProtocol {
