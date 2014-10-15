@@ -45,14 +45,14 @@ trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJson
               <a href="/menu">Het hele menu json</a>
             </li>
             <li><a href="/posting">/posting</a></li>
-            <li><a href="/addChapter">add chapter without catergory and healthcareRequest</a></li>
+            <li><a href="/addChapter">add chapter without catergory and Item</a></li>
             <li><a href="/deleteChapter">remove chapter</a></li>
             <li><a href="/showChapters">all chapters</a></li>
-            <!-- <li><a href="/">add category to chapter without healthcareRequest</a></li>
-            <li><a href="/">add healthcareRequest to chapter</a></li>
-            <li><a href="/">add healthcareRequest to category</a></li>
+            <!-- <li><a href="/">add category to chapter without Item</a></li>
+            <li><a href="/">add Item to chapter</a></li>
+            <li><a href="/">add Item to category</a></li>
             <li><a href="/">remove category</a></li>
-            <li><a href="/">remove healthcareRequest</a></li> -->
+            <li><a href="/">remove Item</a></li> -->
           </ul>
           <p>Add Chapter</p>
           <form action="/addChapter" enctype="multipart/form-data" method="post">

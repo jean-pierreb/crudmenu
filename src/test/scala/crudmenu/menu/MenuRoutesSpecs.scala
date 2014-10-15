@@ -9,7 +9,6 @@ import spray.http.StatusCodes._
 
 class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshalling with EmbeddedMongoBaseSpec_{
 
-  //TODO: Fix Sorting
   "CrudMenu API" when {
   "looking up menu" should {
     "return a tree of menu items" in {
@@ -20,7 +19,7 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
         menu.size shouldBe 2
 
         val chapter1 = menu(0)
-        chapter1.name shouldEqual "Chapter 2"
+        chapter1.name shouldEqual "Chapter 1"
         chapter1.categories.size shouldEqual 1
 
         val categories1 = chapter1.categories(0)
@@ -28,7 +27,7 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
         categories1.items.size shouldEqual 1
 
         val item1 = categories1.items(0)
-        item1.id shouldEqual "3229721769"
+        item1.id shouldEqual "3229721768"
         item1.name shouldEqual "Item 1"
       }
     }

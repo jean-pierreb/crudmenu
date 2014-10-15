@@ -12,6 +12,6 @@ import scala.concurrent.Future
 
 trait MenuQueries extends ExecutionContextSupport  with MongoDBSupport with ChapterMarshalling {
 
-  def getFullMenu(): Future[List[Chapter]] = db[BSONCollection]("chapters").find(BSONDocument()).cursor[Chapter].collect[List]()
+  def getFullMenu(): Future[List[Chapter]] = db[BSONCollection]("chapters").find(BSONDocument()).sort(BSONDocument("name" -> 1)).cursor[Chapter].collect[List]()
 
 }
