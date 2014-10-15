@@ -1,6 +1,6 @@
 package crudmenu.adapters.menu
 
-import crudmenu.models.Chapter
+import crudmenu.models.{ChapterTree, ChapterMarshalling, Chapter}
 import crudmenu.utils.ExecutionContextSupport
 import crudmenu.utils.mongo.MongoDBSupport
 import reactivemongo.bson._
@@ -10,7 +10,7 @@ import Menu._
 
 import scala.concurrent.Future
 
-trait MenuQueries extends ExecutionContextSupport  with MongoDBSupport {
+trait MenuQueries extends ExecutionContextSupport  with MongoDBSupport with ChapterMarshalling {
 
   def getFullMenu(): Future[List[Chapter]] = db[BSONCollection]("chapters").find(BSONDocument()).cursor[Chapter].collect[List]()
 

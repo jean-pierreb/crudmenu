@@ -35,7 +35,7 @@ object Menu {
       val name = doc.getAs[String]("name").get
       val items = doc.getAs[List[Item]]("items").getOrElse(List())
 
-      Category(theId, items)
+      Category(name, items)
     }
   }
 
