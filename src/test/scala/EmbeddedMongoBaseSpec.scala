@@ -70,7 +70,7 @@ trait EmbeddedMongoBaseSpec_ extends BaseSpec with MongoEmbedDatabase with Execu
     embeddedDb = connection("Experimental")
   }
 
-  private def initData() {
+  def initData() {
     Await.result(BsonFixtures(embeddedDb).load("menu.conf"), 5 seconds)
   }
 }

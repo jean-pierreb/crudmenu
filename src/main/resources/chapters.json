@@ -2,6 +2,7 @@
     {
         "chapters": [
             {
+                "id": "1",
                 "name": "Chapter 1",
                 "categories": []
             }
