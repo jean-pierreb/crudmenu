@@ -27,6 +27,11 @@ trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJson
         complete(s"chapter with ID: $chapterId is removed from the database")
       }
     } ~
+    path("showChapter") {
+      formFields('chapterId) { (chapterId) =>
+        complete(showChapter(chapterId))
+      }
+    } ~
     path("showChapters"){
       get{
         complete(showChapters())

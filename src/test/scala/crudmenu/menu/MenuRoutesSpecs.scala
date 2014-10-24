@@ -53,6 +53,17 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
     }
   }
 
+    "showing a chapter" should {
+      "show a chapter by id" in {
+        Get("/showChapter", FormData(Seq("chapterId" -> "536ce83dc353720014000001"))) ~> menuRoutes ~> check {
+          status shouldEqual OK
+          mediaType shouldEqual `application/json`
+          val chapter = responseAs[Chapter]
+          chapter.name shouldEqual "Chapter 1"
+        }
+      }
+    }
+
   "looking up chapters" should {
     "return a tree of all chapters" in {
       Get("/showChapters") ~> menuRoutes ~> check {
