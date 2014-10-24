@@ -27,7 +27,7 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
           categories1.items.size shouldEqual 1
 
           val item1 = categories1.items(0)
-          item1.id shouldEqual "3229721768"
+          item1.id shouldEqual 1
           item1.name shouldEqual "Item 1"
         }
       }

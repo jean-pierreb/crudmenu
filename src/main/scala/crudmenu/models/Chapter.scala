@@ -2,7 +2,7 @@ package crudmenu.models
 
 import spray.json.DefaultJsonProtocol
 
-case class Item(id: String, name: String)
+case class Item(id: Int, name: String)
 
 case class Category(name: String, items: List[Item])
 

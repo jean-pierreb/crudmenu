@@ -8,17 +8,10 @@ object Menu {
 
   implicit object ItemReader extends BSONDocumentReader[Item] {
     def read(doc: BSONDocument): Item = {
-      val id = doc.get("oracle_id").get
-
-      //TODO fix mongo long/integer conversion
-      val theId = id match {
-        case BSONInteger(i) ⇒ i.toString
-        case BSONLong(l)    ⇒ l.toString
-      }
-
+      val id = doc.getAs[Int]("oracle_id").get
       val name = doc.getAs[String]("name").get
 
-      Item(theId, name)
+      Item(id, name)
     }
   }
 

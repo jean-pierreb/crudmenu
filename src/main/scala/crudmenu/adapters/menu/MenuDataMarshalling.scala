@@ -5,7 +5,7 @@ import spray.json.{ DefaultJsonProtocol, RootJsonWriter }
 
 trait MenuDataMarshalling extends DefaultJsonProtocol {
 
-  case class ItemData(id: String, name: String)
+  case class ItemData(id: Int, name: String)
 
   object ItemData {
     implicit def fromDomain(data: Item) = ItemData(data.id, data.name)
