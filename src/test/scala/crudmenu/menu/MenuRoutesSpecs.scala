@@ -48,7 +48,7 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
       Delete("/deleteChapter", FormData(Seq("chapterId" -> "1"))) ~> menuRoutes ~> check {
         status shouldEqual OK
         val chapter = responseAs[String]
-        chapter shouldEqual "Do you want to remove this a chapter with ID: 1 from the database"
+        chapter shouldEqual "chapter with ID: 1 is removed from the database"
       }
     }
   }
