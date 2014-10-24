@@ -20,12 +20,12 @@ class MenuQuerySpec extends EmbeddedMongoBaseSpec_ with MenuQueries {
       whenReady(getFullMenu(), timeout(10 seconds)) { menu ⇒
         menu should have size 2
       }
-    cleanUpDB()
+      cleanUpDB()
     }
   }
 
   "DeleteFromMenu" should {
-    "delete a chapter from the menu" in new MongoBaseScope{
+    "delete a chapter from the menu" in new MongoBaseScope {
       val deletion = deleteChapter("536ce83dc353720014000002")
       println(s"This will be deleted: $deletion")
       whenReady(getFullMenu(), timeout(20 seconds)) { menu ⇒
@@ -36,12 +36,12 @@ class MenuQuerySpec extends EmbeddedMongoBaseSpec_ with MenuQueries {
 
   "ShowMenuElements" should {
     "show chapter" in new MongoBaseScope {
-      whenReady(showChapter("536ce83dc353720014000002"), timeout(10 seconds)) { chapter =>
+      whenReady(showChapter("536ce83dc353720014000002"), timeout(10 seconds)) { chapter ⇒
         chapter.value.name shouldEqual "Chapter 2"
       }
     }
     "show all chapters" in new MongoBaseScope {
-      whenReady(showChapters(), timeout(10 seconds)) { chapters =>
+      whenReady(showChapters(), timeout(10 seconds)) { chapters ⇒
         chapters should have size 2
       }
     }

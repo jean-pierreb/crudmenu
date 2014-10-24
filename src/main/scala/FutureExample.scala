@@ -1,6 +1,6 @@
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
-import scala.util.{Failure, Success}
+import scala.util.{ Failure, Success }
 import scala.util.Random
 
 /**
@@ -18,8 +18,8 @@ object FuturesExample3 extends App {
 
   println("2- before onComplete")
   f.onComplete {
-    case Success(value) => println(s"Got the callback, meaning = $value")
-    case Failure(e) => e.printStackTrace
+    case Success(value) ⇒ println(s"Got the callback, meaning = $value")
+    case Failure(e)     ⇒ e.printStackTrace
   }
 
   // do the rest of your work

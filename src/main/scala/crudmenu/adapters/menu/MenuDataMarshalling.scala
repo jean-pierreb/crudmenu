@@ -1,34 +1,34 @@
 package crudmenu.adapters.menu
 
-import crudmenu.models.{ChapterTree, Category, Item, Chapter}
+import crudmenu.models.{ ChapterTree, Category, Item, Chapter }
 import spray.json.{ DefaultJsonProtocol, RootJsonWriter }
 
 trait MenuDataMarshalling extends DefaultJsonProtocol {
 
   case class ItemData(id: String, name: String)
 
-  object ItemData{
+  object ItemData {
     implicit def fromDomain(data: Item) = ItemData(data.id, data.name)
     implicit val format = jsonFormat2(ItemData.apply)
   }
 
   case class CategoryData(name: String, items: List[ItemData])
 
-  object CategoryData{
+  object CategoryData {
     implicit def fromDomain(data: Category) = CategoryData(data.name, data.items.map(ItemData.fromDomain(_)))
     implicit val format = jsonFormat2(CategoryData.apply)
   }
 
   case class ChapterData(name: String, categories: List[CategoryData])
 
-  object ChapterData{
+  object ChapterData {
     implicit def fromDomain(data: Chapter) = ChapterData(data.name, data.categories.map(CategoryData.fromDomain(_)))
     implicit val format = jsonFormat2(ChapterData.apply)
   }
 
   case class ChapterTreeData(chapters: List[ChapterData])
 
-  object ChapterTreeData{
+  object ChapterTreeData {
     implicit def fromDomain(data: ChapterTree) = ChapterTreeData(data.chapters.map(ChapterData.fromDomain(_)))
     implicit val format = jsonFormat1(ChapterTreeData.apply)
   }

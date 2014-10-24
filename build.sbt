@@ -1,3 +1,6 @@
+import com.typesafe.sbt.SbtScalariform._
+import scalariform.formatter.preferences._
+
 name := "Experiment"
 
 version := "1.0"
@@ -47,3 +50,15 @@ libraryDependencies ++= {
     "net.fehmicansaglam" %% "reactivemongo-extensions-bson" % "0.10.0.3" excludeAll ExclusionRule(organization = "org.reactivemongo")
   )
 }
+
+
+//Sourcecode formatting
+scalariformSettings
+
+ScalariformKeys.preferences := ScalariformKeys.preferences.value
+  .setPreference(AlignSingleLineCaseStatements, true)
+  .setPreference(PreserveDanglingCloseParenthesis, true)
+  .setPreference(RewriteArrowSymbols, true)
+  .setPreference(AlignParameters, true)
+  .setPreference(DoubleIndentClassDeclaration, true)
+  .setPreference(AlignSingleLineCaseStatements.MaxArrowIndent, 90)

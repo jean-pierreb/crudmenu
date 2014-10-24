@@ -1,6 +1,6 @@
 package crudmenu.adapters.menu
 
-import crudmenu.models.{ChapterInfo, Category, Item, Chapter}
+import crudmenu.models.{ ChapterInfo, Category, Item, Chapter }
 import reactivemongo.bson._
 import reactivemongo.bson.BSONLong
 

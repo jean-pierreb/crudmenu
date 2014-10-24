@@ -16,7 +16,7 @@ object FuturesApp extends App {
   }
 
   sayHello onSuccess {
-    case message => Console.println(s"He said '$message'")
+    case message ⇒ Console.println(s"He said '$message'")
   }
 
   Console.println("Waiting..")
@@ -29,7 +29,7 @@ object FuturesApp extends App {
   }
 
   tryDivideByZero onFailure {
-    case e: ArithmeticException => Console.println(s"Don't be silly!")
+    case e: ArithmeticException ⇒ Console.println(s"Don't be silly!")
   }
 
   Console.println("Try dividing by zero..")
@@ -47,7 +47,7 @@ object FuturesApp extends App {
   }
 
   val thenBetray = firstLove map {
-    case loveLetter => {
+    case loveLetter ⇒ {
       Console.println(loveLetter)
       Thread.sleep(500)
       "not really"
@@ -55,7 +55,7 @@ object FuturesApp extends App {
   }
 
   thenBetray onSuccess {
-    case partingWords => Console.println(partingWords)
+    case partingWords ⇒ Console.println(partingWords)
   }
 
   Thread.sleep(2000)
@@ -75,12 +75,12 @@ object FuturesApp extends App {
   }
 
   val doIWin = for {
-    myScore <- calculateMyScore
-    yourScore <- calculateYourScore
+    myScore ← calculateMyScore
+    yourScore ← calculateYourScore
   } yield myScore > yourScore
 
   doIWin onSuccess {
-    case b: Boolean => Console.println(if (b) "yes" else "no")
+    case b: Boolean ⇒ Console.println(if (b) "yes" else "no")
   }
 
   Console.println("Do I win?")
@@ -94,15 +94,15 @@ object FuturesApp extends App {
     Thread.sleep(1000)
     1 / 0
   } recover {
-    case e: ArithmeticException => "Infinity"
+    case e: ArithmeticException ⇒ "Infinity"
   }
 
   tryDivideByZeroAgain onSuccess {
-    case e => Console.println(e)
+    case e ⇒ Console.println(e)
   }
 
   tryDivideByZeroAgain onFailure {
-    case e => Console.println(e)
+    case e ⇒ Console.println(e)
   }
 
   Console.println("Try dividing by zero, recover from exception..")
@@ -122,7 +122,7 @@ object FuturesApp extends App {
   }
 
   f1 fallbackTo f2 onSuccess {
-    case v => Console.println(v)
+    case v ⇒ Console.println(v)
   }
 
   Console.println("Try dividing by zero, fallback to another future..")
@@ -137,12 +137,12 @@ object FuturesApp extends App {
     Thread.sleep(500)
     Console.println("Wham!")
   } andThen {
-    case _ => {
+    case _ ⇒ {
       Thread.sleep(500)
       Console.println("Bam!")
     }
   } andThen {
-    case _ => {
+    case _ ⇒ {
       Thread.sleep(500)
       Console.println("Thank you ma'am!")
     }
@@ -157,11 +157,11 @@ object FuturesApp extends App {
   val willYouMarryMe = Promise[Boolean]
 
   willYouMarryMe.future onSuccess {
-    case yes => Console.println("Yes! :D")
+    case yes ⇒ Console.println("Yes! :D")
   }
 
   willYouMarryMe.future onFailure {
-    case no => Console.println("No :(")
+    case no ⇒ Console.println("No :(")
   }
 
   Future {
@@ -181,7 +181,7 @@ object FuturesApp extends App {
   val whoWonTheRace = Promise[String]
 
   whoWonTheRace.future onSuccess {
-    case name => Console.println(name + " wins")
+    case name ⇒ Console.println(name + " wins")
   }
 
   Future {

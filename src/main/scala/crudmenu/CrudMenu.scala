@@ -20,4 +20,3 @@ class CrudMenu extends HttpServiceActor with ActorContextCreationSupport with Ex
   override def system: ActorSystem = context.system
 }
 
-

@@ -2,7 +2,7 @@ package crudmenu.adapters.menu
 
 import crudmenu.utils.ExecutionContextSupport
 import spray.http.MediaTypes._
-import spray.http.{HttpEntity, HttpResponse}
+import spray.http.{ HttpEntity, HttpResponse }
 import spray.httpx.SprayJsonSupport
 import spray.routing.HttpService
 
@@ -17,23 +17,23 @@ trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJson
       complete(getFullMenu())
     } ~
     path("addChapter") {
-      formFields('chapter) { (chapter) =>
+      formFields('chapter) { (chapter) ⇒
         complete(s"Do you want to add this chapter: $chapter to the databases")
       }
     } ~
     path("deleteChapter") {
-      formFields('chapterId) { (chapterId) =>
+      formFields('chapterId) { (chapterId) ⇒
         deleteChapter(chapterId)
         complete(s"chapter with ID: $chapterId is removed from the database")
       }
     } ~
     path("showChapter") {
-      formFields('chapterId) { (chapterId) =>
+      formFields('chapterId) { (chapterId) ⇒
         complete(showChapter(chapterId))
       }
     } ~
-    path("showChapters"){
-      get{
+    path("showChapters") {
+      get {
         complete(showChapters())
       }
     }
@@ -42,9 +42,11 @@ trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJson
     entity = HttpEntity(`text/html`,
       <html>
         <body>
-          <h1>Say hello to
+          <h1>
+            Say hello to
             <i>spray-can</i>
-            !</h1>
+            !
+          </h1>
           <p>Defined resources:</p>
           <ul>
             <li>

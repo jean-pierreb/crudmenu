@@ -1,10 +1,10 @@
 import akka.actor.ActorSystem
 import com.typesafe.config.ConfigFactory
 import reactivemongo.api.MongoConnection.ParsedURI
-import reactivemongo.api.{DefaultDB, MongoConnection, MongoDriver}
+import reactivemongo.api.{ DefaultDB, MongoConnection, MongoDriver }
 import reactivemongo.extensions.bson.fixtures.BsonFixtures
 
-import scala.util.{Failure, Success}
+import scala.util.{ Failure, Success }
 
 object InitLocalMongo {
   def main(args: Array[String]) = {

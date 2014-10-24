@@ -1,6 +1,6 @@
 package crudmenu
 
-import akka.actor.{Props, ActorSystem}
+import akka.actor.{ Props, ActorSystem }
 import akka.io.IO
 
 import spray.can.Http
@@ -13,5 +13,5 @@ object Main extends App {
   val receptionist = system.actorOf(Props(new CrudMenu), "crudmenu")
   val settings = Settings(system)
 
-  IO(Http) ! Bind(listener= receptionist, interface = settings.Http.Host, port = settings.Http.Port)
+  IO(Http) ! Bind(listener = receptionist, interface = settings.Http.Host, port = settings.Http.Port)
 }

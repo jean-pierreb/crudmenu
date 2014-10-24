@@ -1,5 +1,5 @@
 package crudmenu
-import java.net.{ConnectException, Socket, SocketException}
+import java.net.{ ConnectException, Socket, SocketException }
 
 import scala.util.Random
 
