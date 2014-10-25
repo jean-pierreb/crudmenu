@@ -1,8 +1,7 @@
 package crudmenu.adapters.menu
 
-import crudmenu.models.{ ChapterInfo, Category, Item, Chapter }
+import crudmenu.models._
 import reactivemongo.bson._
-import reactivemongo.bson.BSONLong
 
 object Menu {
 
@@ -32,15 +31,6 @@ object Menu {
       val categories = doc.getAs[List[Category]]("categories").getOrElse(List())
 
       Chapter(id, name, categories)
-    }
-  }
-
-  implicit object ChapterInfoReader extends BSONDocumentReader[ChapterInfo] {
-    def read(doc: BSONDocument): ChapterInfo = {
-      val id = doc.getAs[Int]("id").get
-      val name = doc.getAs[String]("name").get
-
-      ChapterInfo(id, name)
     }
   }
 }

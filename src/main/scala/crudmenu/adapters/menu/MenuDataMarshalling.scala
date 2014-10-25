@@ -1,6 +1,6 @@
 package crudmenu.adapters.menu
 
-import crudmenu.models.{ ChapterTree, Category, Item, Chapter, ChapterInfo }
+import crudmenu.models._
 import spray.json.{ DefaultJsonProtocol, RootJsonWriter }
 
 trait MenuDataMarshalling extends DefaultJsonProtocol {
@@ -29,7 +29,7 @@ trait MenuDataMarshalling extends DefaultJsonProtocol {
   case class ChapterInfoData(id: Int, name: String)
 
   object ChapterInfoData {
-    implicit def fromDomain(data: ChapterInfo) = ChapterInfoData(data.id, data.name)
+    implicit def fromDomain(data: Chapter) = ChapterInfoData(data.id, data.name)
     implicit val format = jsonFormat2(ChapterInfoData.apply)
   }
 
@@ -52,8 +52,8 @@ trait MenuDataMarshalling extends DefaultJsonProtocol {
     def write(chapter: Chapter) = ChapterData.format.write(ChapterData.fromDomain(chapter))
   }
 
-  implicit val chapterInfoWriter = new RootJsonWriter[ChapterInfo] {
-    def write(chapter: ChapterInfo) = ChapterInfoData.format.write(ChapterInfoData.fromDomain(chapter))
+  implicit val chapterInfoWriter = new RootJsonWriter[Chapter] {
+    def write(chapter: Chapter) = ChapterInfoData.format.write(ChapterInfoData.fromDomain(chapter))
   }
 
   implicit val chapterTreeWriter = new RootJsonWriter[ChapterTree] {

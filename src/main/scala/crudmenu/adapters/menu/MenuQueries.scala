@@ -1,6 +1,6 @@
 package crudmenu.adapters.menu
 
-import crudmenu.models.{ ChapterInfo, ChapterMarshalling, Chapter }
+import crudmenu.models._
 import crudmenu.utils.ExecutionContextSupport
 import crudmenu.utils.mongo.MongoDBSupport
 import reactivemongo.bson._
@@ -18,7 +18,7 @@ trait MenuQueries extends ExecutionContextSupport with MongoDBSupport with Chapt
 
   def showChapter(id: String): Future[Option[Chapter]] = db[BSONCollection]("chapters").find(BSONDocument("_id" -> id)).one[Chapter]
 
-  def showChapters(): Future[List[ChapterInfo]] = db[BSONCollection]("chapters").find(BSONDocument()).sort(BSONDocument("name" -> 1)).cursor[ChapterInfo].collect[List]()
+  def showChapters(): Future[List[Chapter]] = db[BSONCollection]("chapters").find(BSONDocument()).sort(BSONDocument("name" -> 1)).cursor[Chapter].collect[List]()
 
   def cleanUpDB() = db[BSONCollection]("chapters").remove(BSONDocument.empty)
 }

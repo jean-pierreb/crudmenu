@@ -8,14 +8,11 @@ case class Category(id: Int, name: String, items: List[Item])
 
 case class Chapter(id: Int, name: String, categories: List[Category])
 
-case class ChapterInfo(id: Int, name: String)
-
 case class ChapterTree(chapters: List[Chapter])
 
 trait ChapterMarshalling extends DefaultJsonProtocol {
   implicit val itemFormat = jsonFormat2(Item)
   implicit val categoryFormat = jsonFormat3(Category)
   implicit val chapterFormat = jsonFormat3(Chapter)
-  implicit val chapterInfoFormat = jsonFormat2(ChapterInfo)
   implicit val chapterTreeFormat = rootFormat(lazyFormat(jsonFormat1(ChapterTree)))
 }
