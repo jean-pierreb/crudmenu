@@ -2,7 +2,6 @@ package crudmenu.menu
 
 import crudmenu.adapters.menu.{ MenuDataMarshalling, MenuRoutes }
 import crudmenu.{ EmbeddedMongoBaseSpec_, RouteBaseSpec }
-import crudmenu.models.{ ChapterInfo, Chapter }
 import spray.http.FormData
 import spray.http.MediaTypes._
 import spray.http.StatusCodes._
@@ -15,7 +14,7 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
         Get("/menu") ~> menuRoutes ~> check {
           status shouldEqual OK
           mediaType shouldEqual `application/json`
-          val menu = responseAs[List[Chapter]]
+          val menu = responseAs[List[ChapterData]]
           menu.size shouldBe 2
 
           val chapter1 = menu(0)
@@ -58,7 +57,7 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
         Get("/showChapter", FormData(Seq("chapterId" -> "536ce83dc353720014000001"))) ~> menuRoutes ~> check {
           status shouldEqual OK
           mediaType shouldEqual `application/json`
-          val chapter = responseAs[Chapter]
+          val chapter = responseAs[ChapterData]
           chapter.name shouldEqual "Chapter 1"
         }
       }
@@ -69,7 +68,7 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
         Get("/showChapters") ~> menuRoutes ~> check {
           status shouldEqual OK
           mediaType shouldEqual `application/json`
-          val chapters = responseAs[List[ChapterInfo]]
+          val chapters = responseAs[List[ChapterInfoData]]
           chapters.size shouldEqual 2
         }
       }
