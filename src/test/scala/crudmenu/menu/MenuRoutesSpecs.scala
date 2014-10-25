@@ -37,7 +37,7 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
         Post("/addChapter", FormData(Seq("chapter" -> "Hoofdstuk 1"))) ~> menuRoutes ~> check {
           status shouldEqual OK
           val chapter = responseAs[String]
-          chapter shouldEqual "Do you want to add this chapter: Hoofdstuk 1 to the databases"
+          chapter shouldEqual "Chapter Hoofdstuk 1 is added to the database"
         }
       }
     }
@@ -69,7 +69,7 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
           status shouldEqual OK
           mediaType shouldEqual `application/json`
           val chapters = responseAs[List[ChapterInfoData]]
-          chapters.size shouldEqual 2
+          chapters.size shouldEqual 3
         }
       }
     }

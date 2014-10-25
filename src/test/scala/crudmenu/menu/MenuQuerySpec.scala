@@ -24,6 +24,16 @@ class MenuQuerySpec extends EmbeddedMongoBaseSpec_ with MenuQueries {
     }
   }
 
+  "AddToMenu" should {
+    "add a chapter to the menu" in new MongoBaseScope {
+      val addition = addChapter("Chapter 3")
+      println(s"This chapter will be added: $addition")
+      whenReady(getFullMenu(), timeout(20 seconds)) { menu ⇒
+        menu should have size 3
+      }
+    }
+  }
+
   "DeleteFromMenu" should {
     "delete a chapter from the menu" in new MongoBaseScope {
       val deletion = deleteChapter("536ce83dc353720014000002")

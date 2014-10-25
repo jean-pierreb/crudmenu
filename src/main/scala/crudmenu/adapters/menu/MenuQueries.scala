@@ -14,6 +14,10 @@ trait MenuQueries extends ExecutionContextSupport with MongoDBSupport with Chapt
 
   def getFullMenu(): Future[List[Chapter]] = db[BSONCollection]("chapters").find(BSONDocument()).sort(BSONDocument("name" -> 1)).cursor[Chapter].collect[List]()
 
+  var r = new scala.util.Random
+
+  def addChapter(chapterName: String) = db[BSONCollection]("chapters").insert(BSONDocument("id" -> r.nextInt(), "name" -> chapterName))
+
   def deleteChapter(id: String) = db[BSONCollection]("chapters").remove(BSONDocument("_id" -> id), firstMatchOnly = true)
 
   def showChapter(id: String): Future[Option[Chapter]] = db[BSONCollection]("chapters").find(BSONDocument("_id" -> id)).one[Chapter]

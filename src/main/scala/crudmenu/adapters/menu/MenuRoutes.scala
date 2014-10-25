@@ -18,7 +18,8 @@ trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJson
     } ~
     path("addChapter") {
       formFields('chapter) { (chapter) ⇒
-        complete(s"Do you want to add this chapter: $chapter to the databases")
+        addChapter(chapter)
+        complete(s"Chapter $chapter is added to the database")
       }
     } ~
     path("deleteChapter") {
