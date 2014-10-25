@@ -17,14 +17,7 @@ object Menu {
 
   implicit object CategoryReader extends BSONDocumentReader[Category] {
     def read(doc: BSONDocument): Category = {
-      val id = doc.get("id").get
-
-      //TODO fix mongo long/integer conversion
-      val theId = id match {
-        case BSONInteger(i) ⇒ i.toString
-        case BSONLong(l)    ⇒ l.toString
-      }
-
+      val id = doc.getAs[Int]("id").get
       val name = doc.getAs[String]("name").get
       val items = doc.getAs[List[Item]]("items").getOrElse(List())
 
@@ -34,14 +27,7 @@ object Menu {
 
   implicit object ChapterReader extends BSONDocumentReader[Chapter] {
     def read(doc: BSONDocument): Chapter = {
-      val id = doc.get("id").get
-
-      //TODO fix mongo long/integer conversion
-      val theId = id match {
-        case BSONInteger(i) ⇒ i.toString
-        case BSONLong(l)    ⇒ l.toString
-      }
-
+      val id = doc.getAs[Int]("id").get
       val name = doc.getAs[String]("name").get
       val categories = doc.getAs[List[Category]]("categories").getOrElse(List())
 
@@ -51,17 +37,10 @@ object Menu {
 
   implicit object ChapterInfoReader extends BSONDocumentReader[ChapterInfo] {
     def read(doc: BSONDocument): ChapterInfo = {
-      val id = doc.get("id").get
-
-      //TODO fix mongo long/integer conversion
-      val theId = id match {
-        case BSONInteger(i) ⇒ i.toString
-        case BSONLong(l)    ⇒ l.toString
-      }
-
+      val id = doc.getAs[Int]("id").get
       val name = doc.getAs[String]("name").get
 
-      ChapterInfo(theId, name)
+      ChapterInfo(id, name)
     }
   }
 }

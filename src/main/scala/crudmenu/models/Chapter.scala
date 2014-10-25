@@ -8,7 +8,7 @@ case class Category(name: String, items: List[Item])
 
 case class Chapter(name: String, categories: List[Category])
 
-case class ChapterInfo(id: String, name: String)
+case class ChapterInfo(id: Int, name: String)
 
 case class ChapterTree(chapters: List[Chapter])
 
