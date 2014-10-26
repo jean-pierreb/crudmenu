@@ -4,7 +4,9 @@ import crudmenu.EmbeddedMongoBaseSpec_
 import crudmenu.adapters.menu.MenuQueries
 import org.scalatest.concurrent.ScalaFutures._
 import org.specs2.mutable.After
+import reactivemongo.extensions.bson.fixtures.BsonFixtures
 import utils.tags.DbTest
+import scala.concurrent.Await
 import scala.concurrent.duration.DurationInt
 
 @DbTest
@@ -13,6 +15,11 @@ class MenuQuerySpec extends EmbeddedMongoBaseSpec_ with MenuQueries {
   trait MongoBaseScope extends After {
     initData()
     def after = cleanUpDB()
+  }
+
+  override def initData() {
+    cleanUpDB()
+    Await.result(BsonFixtures(db)(executionContext).load("menu.conf"), 5 seconds)
   }
 
   "FullMenuQuery" should {
@@ -36,7 +43,7 @@ class MenuQuerySpec extends EmbeddedMongoBaseSpec_ with MenuQueries {
 
   "DeleteFromMenu" should {
     "delete a chapter from the menu" in new MongoBaseScope {
-      val deletion = deleteChapter("536ce83dc353720014000002")
+      val deletion = deleteChapter(2)
       println(s"This will be deleted: $deletion")
       whenReady(getFullMenu(), timeout(20 seconds)) { menu ⇒
         menu should have size 1

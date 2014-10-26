@@ -71,6 +71,6 @@ trait EmbeddedMongoBaseSpec_ extends BaseSpec with MongoEmbedDatabase with Execu
   }
 
   def initData() {
-    Await.result(BsonFixtures(embeddedDb).load("menu.conf"), 5 seconds)
+    Await.result(BsonFixtures(embeddedDb).removeAll("chapters"), 5 seconds)
   }
 }

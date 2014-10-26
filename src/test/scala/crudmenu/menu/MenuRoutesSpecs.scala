@@ -2,15 +2,29 @@ package crudmenu.menu
 
 import crudmenu.adapters.menu.{ MenuDataMarshalling, MenuRoutes }
 import crudmenu.{ EmbeddedMongoBaseSpec_, RouteBaseSpec }
+import org.specs2.mutable.After
+import reactivemongo.extensions.bson.fixtures.BsonFixtures
 import spray.http.FormData
 import spray.http.MediaTypes._
 import spray.http.StatusCodes._
+import scala.concurrent.Await
+import scala.concurrent.duration.DurationLong
 
 class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshalling with EmbeddedMongoBaseSpec_ {
 
+  trait MongoBaseScope extends After {
+    initData()
+    def after = cleanUpDB()
+  }
+
+  override def initData() {
+    cleanUpDB()
+    Await.result(BsonFixtures(db)(executionContext).load("menu.conf"), 5 seconds)
+  }
+
   "CrudMenu API" when {
     "looking up menu" should {
-      "return a tree of menu items" in {
+      "return a tree of menu items" in new MongoBaseScope {
         Get("/menu") ~> menuRoutes ~> check {
           status shouldEqual OK
           mediaType shouldEqual `application/json`
@@ -33,7 +47,7 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
     }
 
     "posting a chapter" should {
-      "add a chapter to dB" in {
+      "add a chapter to dB" in new MongoBaseScope {
         Post("/addChapter", FormData(Seq("chapter" -> "Hoofdstuk 1"))) ~> menuRoutes ~> check {
           status shouldEqual OK
           val chapter = responseAs[String]
@@ -43,7 +57,7 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
     }
 
     "deleting a chapter" should {
-      "delete a chapter by id" in {
+      "delete a chapter by id" in new MongoBaseScope {
         Delete("/deleteChapter", FormData(Seq("chapterId" -> "1"))) ~> menuRoutes ~> check {
           status shouldEqual OK
           val chapter = responseAs[String]
@@ -53,7 +67,7 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
     }
 
     "showing a chapter" should {
-      "show a chapter by id" in {
+      "show a chapter by id" in new MongoBaseScope {
         Get("/showChapter", FormData(Seq("chapterId" -> "536ce83dc353720014000001"))) ~> menuRoutes ~> check {
           status shouldEqual OK
           mediaType shouldEqual `application/json`
@@ -64,12 +78,12 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
     }
 
     "looking up chapters" should {
-      "return a tree of all chapters" in {
+      "return a tree of all chapters" in new MongoBaseScope {
         Get("/showChapters") ~> menuRoutes ~> check {
           status shouldEqual OK
           mediaType shouldEqual `application/json`
           val chapters = responseAs[List[ChapterInfoData]]
-          chapters.size shouldEqual 3
+          chapters.size shouldEqual 2
         }
       }
     }

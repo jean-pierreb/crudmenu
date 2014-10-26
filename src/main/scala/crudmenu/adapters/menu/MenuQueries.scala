@@ -18,7 +18,7 @@ trait MenuQueries extends ExecutionContextSupport with MongoDBSupport with Chapt
 
   def addChapter(chapterName: String) = db[BSONCollection]("chapters").insert(BSONDocument("id" -> r.nextInt(), "name" -> chapterName))
 
-  def deleteChapter(id: String) = db[BSONCollection]("chapters").remove(BSONDocument("_id" -> id), firstMatchOnly = true)
+  def deleteChapter(id: Int) = db[BSONCollection]("chapters").remove(BSONDocument("id" -> id), firstMatchOnly = true)
 
   def showChapter(id: String): Future[Option[Chapter]] = db[BSONCollection]("chapters").find(BSONDocument("_id" -> id)).one[Chapter]
 

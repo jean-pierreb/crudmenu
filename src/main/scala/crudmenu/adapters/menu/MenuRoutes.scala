@@ -23,7 +23,7 @@ trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJson
       }
     } ~
     path("deleteChapter") {
-      formFields('chapterId) { (chapterId) ⇒
+      formFields('chapterId.as[Int]) { (chapterId) ⇒
         deleteChapter(chapterId)
         complete(s"chapter with ID: $chapterId is removed from the database")
       }
