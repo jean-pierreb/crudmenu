@@ -53,7 +53,7 @@ class MenuQuerySpec extends EmbeddedMongoBaseSpec_ with MenuQueries {
 
   "ShowMenuElements" should {
     "show chapter" in new MongoBaseScope {
-      whenReady(showChapter("536ce83dc353720014000002"), timeout(10 seconds)) { chapter ⇒
+      whenReady(showChapter(2), timeout(10 seconds)) { chapter ⇒
         chapter.value.name shouldEqual "Chapter 2"
       }
     }

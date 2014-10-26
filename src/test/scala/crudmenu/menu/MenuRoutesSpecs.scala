@@ -68,7 +68,7 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
 
     "showing a chapter" should {
       "show a chapter by id" in new MongoBaseScope {
-        Get("/showChapter", FormData(Seq("chapterId" -> "536ce83dc353720014000001"))) ~> menuRoutes ~> check {
+        Get("/showChapter", FormData(Seq("chapterId" -> "1"))) ~> menuRoutes ~> check {
           status shouldEqual OK
           mediaType shouldEqual `application/json`
           val chapter = responseAs[ChapterData]

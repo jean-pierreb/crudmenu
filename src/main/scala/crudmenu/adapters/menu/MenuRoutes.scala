@@ -29,7 +29,7 @@ trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJson
       }
     } ~
     path("showChapter") {
-      formFields('chapterId) { (chapterId) ⇒
+      formFields('chapterId.as[Int]) { (chapterId) ⇒
         complete(showChapter(chapterId))
       }
     } ~
