@@ -13,13 +13,10 @@ import scala.concurrent.duration.DurationLong
 class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshalling with EmbeddedMongoBaseSpec_ {
 
   trait MongoBaseScope extends After {
-    initData()
-    def after = cleanUpDB()
-  }
-
-  override def initData() {
     cleanUpDB()
     Await.result(BsonFixtures(db)(executionContext).load("menu.conf"), 5 seconds)
+    ensureIndexes()
+    def after = cleanUpDB()
   }
 
   "CrudMenu API" when {

@@ -3,6 +3,7 @@ package crudmenu.adapters.menu
 import crudmenu.models._
 import crudmenu.utils.ExecutionContextSupport
 import crudmenu.utils.mongo.MongoDBSupport
+import reactivemongo.api.indexes.{ Index, IndexType }
 import reactivemongo.bson._
 import reactivemongo.api.collections.default.BSONCollection
 import reactivemongo.bson.BSONDocument
@@ -25,4 +26,9 @@ trait MenuQueries extends ExecutionContextSupport with MongoDBSupport with Chapt
   def showChapters(): Future[List[Chapter]] = db[BSONCollection]("chapters").find(BSONDocument()).sort(BSONDocument("name" -> 1)).cursor[Chapter].collect[List]()
 
   def cleanUpDB() = db[BSONCollection]("chapters").remove(BSONDocument.empty)
+
+  def ensureIndexes() = {
+    val index1 = db[BSONCollection]("chapters").indexesManager.ensure(Index(Seq("id" -> IndexType.Ascending), unique = true))
+    Future.sequence(Seq(index1))
+  }
 }

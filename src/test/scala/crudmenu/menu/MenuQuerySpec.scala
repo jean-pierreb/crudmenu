@@ -13,17 +13,14 @@ import scala.concurrent.duration.DurationInt
 class MenuQuerySpec extends EmbeddedMongoBaseSpec_ with MenuQueries {
 
   trait MongoBaseScope extends After {
-    initData()
+    cleanUpDB()
+    Await.result(BsonFixtures(db)(executionContext).load("menu.conf"), 5 seconds)
+    ensureIndexes()
     def after = cleanUpDB()
   }
 
-  override def initData() {
-    cleanUpDB()
-    Await.result(BsonFixtures(db)(executionContext).load("menu.conf"), 5 seconds)
-  }
-
   "FullMenuQuery" should {
-    "return complete menu" in {
+    "return complete menu" in new MongoBaseScope {
       whenReady(getFullMenu(), timeout(10 seconds)) { menu ⇒
         menu should have size 2
       }
