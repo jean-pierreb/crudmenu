@@ -17,7 +17,7 @@ trait MenuQueries extends ExecutionContextSupport with MongoDBSupport with Chapt
 
   var r = new scala.util.Random
 
-  def addChapter(chapterName: String) = db[BSONCollection]("chapters").insert(BSONDocument("id" -> r.nextInt(), "name" -> chapterName))
+  def addChapter(chapterName: String) = db[BSONCollection]("chapters").insert(BSONDocument("id" -> r.nextInt(1000), "name" -> chapterName))
 
   def deleteChapter(id: Int) = db[BSONCollection]("chapters").remove(BSONDocument("id" -> id), firstMatchOnly = true)
 
@@ -28,7 +28,8 @@ trait MenuQueries extends ExecutionContextSupport with MongoDBSupport with Chapt
   def cleanUpDB() = db[BSONCollection]("chapters").remove(BSONDocument.empty)
 
   def ensureIndexes() = {
-    val index1 = db[BSONCollection]("chapters").indexesManager.ensure(Index(Seq("id" -> IndexType.Ascending), unique = true))
-    Future.sequence(Seq(index1))
+    val indexId = db[BSONCollection]("chapters").indexesManager.ensure(Index(Seq("id" -> IndexType.Ascending), unique = true))
+    val indexChapterName = db[BSONCollection]("chapters").indexesManager.ensure(Index(Seq("name" -> IndexType.Ascending), unique = true))
+    Future.sequence(Seq(indexId, indexChapterName))
   }
 }
