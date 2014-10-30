@@ -11,26 +11,37 @@
         <a href="/menu">Het hele menu json</a>
     </li>
     <li><a href="/posting">/posting</a></li>
-    <li><a href="/addChapter">add chapter without category and Item</a></li>
-    <li><a href="/deleteChapter">remove chapter</a></li>
+    <!--<li><a href="/addChapter">add chapter without category and Item</a></li>-->
+    <!--<li><a href="/deleteChapter">remove chapter</a></li>-->
     <li><a href="/showChapters">all chapters</a></li>
+    <li><a href="/showChapters">all categories</a></li>
+    <li><a href="/showChapters">all items</a></li>
     <!-- <li><a href="/">add category to chapter without Item</a></li>
     <li><a href="/">add Item to chapter</a></li>
     <li><a href="/">add Item to category</a></li>
     <li><a href="/">remove category</a></li>
     <li><a href="/">remove Item</a></li> -->
 </ul>
-<p>Add Chapter</p>
+<p>Add chapter without category and Item</p>
 <form action="/addChapter" enctype="multipart/form-data" method="post">
     Chapter:
     <input type="text" name="chapter" />
     <br/>
     <input type="submit">Submit</input>
 </form>
-<p>Remove Chapter with ID</p>
+<p>Remove Chapter by ID</p>
 <form action="/deleteChapter" enctype="multipart/form-data" method="post">
     Chapter ID:
     <input type="text" name="chapterId" />
+    <br/>
+    <input type="submit">Submit</input>
+</form>
+<p>Add category to chapter by id</p>
+<form action="/addCategory" enctype="multipart/form-data" method="post">
+    Chapter:
+    <input type="text" name="chapterId" />
+    <br/>
+    <input type="text" name="category" />
     <br/>
     <input type="submit">Submit</input>
 </form>

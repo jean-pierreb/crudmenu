@@ -84,5 +84,15 @@ class MenuRoutesSpecs extends RouteBaseSpec with MenuRoutes with MenuDataMarshal
         }
       }
     }
+
+    "posting a Category" should {
+      "add a chapter to dB" in new MongoBaseScope {
+        Post("/addCategory", FormData(Seq("chapterId" -> "1", "category" -> "Cat 2"))) ~> menuRoutes ~> check {
+          status shouldEqual OK
+          val chapter = responseAs[String]
+          chapter shouldEqual "Category Cat 2 is added to chapter with Id: 1"
+        }
+      }
+    }
   }
 }

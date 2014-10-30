@@ -37,5 +37,10 @@ trait MenuRoutes extends HttpService with ExecutionContextSupport with SprayJson
       get {
         complete(showChapters())
       }
+    } ~
+    path("addCategory") {
+      formFields('chapterId.as[Int], 'category) { (chapterId, category) ⇒
+        complete(s"Category $category is added to chapter with Id: $chapterId")
+      }
     }
 }
